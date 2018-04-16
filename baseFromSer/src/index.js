@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import PropTypes from 'prop-types';
 import './index.css';
+import SimpleMap from "./containers/SimpleMap";
 
 class FormattedDate extends React.Component {
   render() {
@@ -1395,40 +1396,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <LoginControl />
-        <LoggingButton />
-        <Toggle />
-        <Mailbox unreadMessages={messages} />
-        <Page />
-        <Clock />
-        <NumberList numbers={numbers} />
-        <Blog posts={posts} />
-        <NameForm />
-        <EssayForm />
-        <FlavorForm />
-        <Reservation />
-        <UncontrolledInput />
-        <Calculator />
-        <WelcomeDialog />
-        <Containment />
-        <SignUpDialog />
-        <FilterableProductTable products={dataJSON} />
-        <ListOfTenThings />
-        <GreetingWithPropTytes
-          name={'Error'}
-        />
-        <CustomTextInput />
-        <AutoFocusTextInput />
-        <RefFunction />
-        <RefCallback />
-        <FileInput />
-        <CounterButton color={10}/>
-        <WordAdder />
-        <ToDoListIndex />
-        <ToDoListId />
-        <Theme />
-        <ThemeToggle />
-        <ThemedButtonHOC />
+        <SimpleMap/>
       </div>
     );
   }
